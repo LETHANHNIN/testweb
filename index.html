@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Việc cần làm</title>
+  <!-- Liên kết tới file CSS để trang trí giao diện -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="app">
+    <h1>📝 Việc cần làm hôm nay</h1>
+
+    <!-- Ô nhập liệu + nút thêm -->
+    <div class="input-row">
+      <input type="text" id="task-input" placeholder="Nhập việc cần làm..." />
+      <button id="add-btn">Thêm</button>
+    </div>
+
+    <!-- Danh sách công việc sẽ được JS chèn vào đây -->
+    <ul id="task-list"></ul>
+
+    <p id="empty-msg" class="empty-msg">Chưa có việc nào. Thêm việc đầu tiên nhé!</p>
+  </main>
+
+  <!-- Liên kết file JS - phải để cuối body để HTML load xong trước -->
+  <script src="script.js"></script>
+</body>
+</html>
